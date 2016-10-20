@@ -12,6 +12,7 @@ var files = [
   './index.html?utm=homescreen', //SW treats query string as new page
   './css/styles.css',
   'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700', //caching 3rd party content
+  'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css',
   './images/icons/android-chrome-192x192.png',
   './images/icons/favicon-16x16.png',
   './images/icons/favicon-32x32.png',
@@ -20,6 +21,10 @@ var files = [
   './js/sync.js',
   './js/snackbar.js',
   './js/share.js',
+  './js/share.js',
+  './js/jquery.min.js',
+  './js/jquery-ui.min.js',
+  './js/index.js',
   './manifest.json'
 ];
 
