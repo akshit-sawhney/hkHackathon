@@ -102,7 +102,7 @@ header {
 }*/
 
 .app__offline {
-  background-color: #6b6b6b;
+  opacity: 0.5;
 }
 
 .header__icon {
