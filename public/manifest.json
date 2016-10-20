@@ -1,5 +1,5 @@
 {
-  "name": "Progressive Web App",
+  "name": "HK Lite",
   "short_name": "HK Lite",
   "description": "Demo for progressive web app with push notifications, background sync etc.",
   "start_url": "./index.html?utm=homescreen",
@@ -18,10 +18,10 @@
       "sizes": "512x512"
   }],
   "author": {
-    "name": "Gokulakrishnan Kalaikovan",
-    "website": "https://gokulkrishh.github.io",
-    "github": "https://github.com/gokulkrishh",
-    "source-repo": "https://github.com/gokulkrishh/demo-progressive-web-app"
+    "name": "Healthkart",
+    "website": "https://healthkart.com",
+    "github": "https://healthkart.com",
+    "source-repo": "https://healthkart.com"
   },
   "gcm_sender_id": "811901708931",
   "gcm_user_visible_only": true

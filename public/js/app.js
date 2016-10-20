@@ -2,7 +2,7 @@
   'use strict';
 
   var apiKey = '428a20d6f31803d62bc3d29c0eff0937';
-  var headerElement = document.querySelector('header');
+  var headerElement = document.querySelector('main');
   var metaTagTheme = document.querySelector('meta[name=theme-color]');
   var menuIconElement = document.querySelector('.header__icon');
   var menuElement = document.querySelector('.menu');
@@ -53,7 +53,7 @@
   menuOverlayElement.addEventListener('click', hideMenu, false);
 
   //Add card click event
-  addCardBtnElement.addEventListener('click', addGitUserCard, false);
+  // addCardBtnElement.addEventListener('click', addGitUserCard, false);
 
   //After DOM Loaded, check for offline/online status
   document.addEventListener('DOMContentLoaded', function(event) {

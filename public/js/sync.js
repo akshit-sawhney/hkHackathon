@@ -5,9 +5,9 @@
   var bgSyncElement = document.querySelector('.custom__button-bg');
   var bgSyncBtnElement = document.querySelector('.turn-on-sync');
 
-  bgSyncBtnElement.addEventListener('click', function () {
-    window.registerBGSync();
-  });
+  // bgSyncBtnElement.addEventListener('click', function () {
+  //   window.registerBGSync();
+  // });
 
   //To register `BG Sync` and check 'push notification' support
   //Exposing `registerSync()` globally for only development purpose
