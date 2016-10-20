@@ -1,0 +1,7 @@
+
+
+curl --header "Authorization: key=AIzaSyCqeX1Madw9wGNtw2zGZp2jfTUSzPXAZqk" --header Content-Type:"application/json" https://android.googleapis.com/gcm/send -d "{\"registration_ids\":[\"cuk8z2APZEw:APA91bG3nKhycasu_68zgd3mxTu34j2XJx5vFeS70oU9UCfjy8BEyhPu31EAvvwTQ9enBq1nO3rsoSxqBntjd7uEAi04OPtDMPkV9BfzO9WSqMX1dIkf1Ml8FVI6xNMdxgM0g-r8Bc9o\"]}"
+
+cuk8z2APZEw:APA91bG3nKhycasu_68zgd3mxTu34j2XJx5vFeS70oU9UCfjy8BEyhPu31EAvvwTQ9enBq1nO3rsoSxqBntjd7uEAi04OPtDMPkV9BfzO9WSqMX1dIkf1Ml8FVI6xNMdxgM0g
+
+"cuk8z2APZEw:APA91bG3nKhycasu_68zgd3mxTu34j2XJx5vFeS70oU9UCfjy8BEyhPu31EAvvwTQ9enBq1nO3rsoSxqBntjd7uEAi04OPtDMPkV9BfzO9WSqMX1dIkf1Ml8FVI6xNMdxgM0g-r8Bc9o"

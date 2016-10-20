@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HK Lite</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="This is a lighter version of healthkart.com. This even works offline.">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0288d1">
+    <meta name="msapplication-TileColor" content="#0288d1">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="HK Lite">
+    <meta name="application-name" content="HK Lite">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+  <div class="app app__layout">
+    <!-- <header>
+      <span class="header__icon">
+        <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </span>
+
+      <span class="header__title no--select">HK Lite</span>
+    </header> -->
+
+    <!-- <div class="menu">
+      <div class="menu__header"></div>
+      <ul class="menu__list">
+        <li><a target="_blank" rel="noopener" href="#">Home</a></li>
+        <li><a target="_blank" rel="noopener" href="#">Blogs</a></li>
+    </div>
+    <div class="menu__overlay"></div> -->
+
+
+
+    <div class="main-wrapper">
+        <header id="header" class="header">
+
+            <div class="mtb5 action-header">
+                <a class="header-sprite header-sprite-cart cart" href="/cart/Cart.action">
+                    <span id="semiBolditalic_H" class="semi_bolditalic">0</span>
+                    <svg class="floatL svg-cart-dims" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path fill="#162D40" d="M7.2,19.2c-1.3,0-2.4,1.1-2.4,2.4c0,1.3,1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4C9.6,20.3,8.5,19.2,7.2,19.2z M0,0v2.4h2.4l4.3,9.1l-1.6,2.9c-0.2,0.3-0.3,0.7-0.3,1.2c0,1.3,1.1,2.4,2.4,2.4h14.4v-2.4H7.7c-0.2,0-0.3-0.1-0.3-0.3l0-0.1l1.1-2h8.9c0.9,0,1.7-0.5,2.1-1.2l4.3-7.8C24,4,24,3.8,24,3.6c0-0.7-0.5-1.2-1.2-1.2H5.1L3.9,0L0,0z M19.2,19.2c-1.3,0-2.4,1.1-2.4,2.4c0,1.3,1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4C21.6,20.3,20.5,19.2,19.2,19.2z"/></svg>
+                </a>
+
+                <div class="header-sprite header-sprite-user user" >
+                   <svg class="svg-icon floatL svg-zuser_1-dims" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="0 0 24 24" xml:space="preserve" width="18px" height="18px" stroke-linecap="" stroke-linejoin="" stroke-miterlimit=""> <path fill="#A7A9AC" stroke="#A7A9AC" stroke-width="0" d="M17,7c0,2.8-2.2,5-5,5S7,9.8,7,7c0-2.8,2.2-5,5-5S17,4.2,17,7z"></path> <path fill="#A7A9AC" stroke="#A7A9AC" stroke-width="0" d="M2,20.3c0-3.3,6.7-5.2,10-5.2s10,1.8,10,5.2V22H2V20.3z"></path> </svg>
+                </div>
+                <div>
+                    <a href="https://itunes.apple.com/us/app/healthkart/id995933852?ls=1&amp;mt=8&amp;referrer=utm_source%3Dhealthkart%26utm_medium%3Dmob" target="_blank" class="header-sprite header-sprite-user cart download-ios-app" style="display: none;">
+                      <svg class="svg-icon floatL svg-appd-dims" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="0 0 24 24" xml:space="preserve" width="26px" height="26px" stroke-linecap="" stroke-linejoin="" stroke-miterlimit=""> <path fill="#fff" stroke="#cccccc" stroke-width="0" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path> <path fill="none" stroke="#cccccc" stroke-width="0" d="M0 0h24v24H0z"></path> </svg>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.healthkart.healthkart&amp;hl=en&amp;referrer=utm_source%3Dhealthkart%26utm_medium%3Dmob" target="_blank" class="header-sprite header-sprite-user cart download-android-app" style="display:none">
+                        <svg class="svg-icon floatL svg-appd-dims" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="0 0 24 24" xml:space="preserve" width="26px" height="26px" stroke-linecap="" stroke-linejoin="" stroke-miterlimit=""> <path fill="#fff" stroke="#cccccc" stroke-width="0" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path> <path fill="none" stroke="#cccccc" stroke-width="0" d="M0 0h24v24H0z"></path> </svg>
+
+
+                    </a>
+                </div>
+                <div class="tr-menu-mob header-sprite header-sprite-menu menu" >
+                    <svg class="floatL svg-humburger-dims" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path fill="#162D40" d="M0,3.6V6h24V3.6H0z M0,10.8v2.4h24v-2.4H0z M0,18v2.4h24V18H0z"/></svg>
+                </div>
+                <div class="header-sprite header-sprite-logo logo"><a href="/home/Home.action"><svg class="svg-hkmoblogo-dims floatL" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 178.5 40" enable-background="new 0 0 162.5 40" xml:space="preserve"><g><path fill="#4A8FCC" d="M95.5,40c-11,0-20-9-20-20c0-11,9-20,20-20c11,0,20,9,20,20C115.5,31,106.5,40,95.5,40z M95.5,1.2C85.1,1.2,76.7,9.6,76.7,20c0,10.4,8.4,18.8,18.8,18.8c10.4,0,18.8-8.4,18.8-18.8C114.2,9.6,105.8,1.2,95.5,1.2z"/><g><path d="M10.5,27.6v-7.3H2.9v7.3H0V11.1h2.9v6.6h7.6v-6.6h3v16.5H10.5z"/><path d="M18.9,27.6V11.1h10.3v2.6h-7.3v4.1h5.9l0.4,2.6h-6.3v4.7h7.6v2.6H18.9z"/><path d="M35,27.6h-2.9l6.5-16.7H42l6.5,16.4l-2.9,0.7l-1.6-4.4h-7.3L35,27.6z M40.3,13.7L40.3,13.7l-2.7,7.2h5.4C43,20.9,40.3,13.7,40.3,13.7z"/><path d="M52.1,27.6V11.1h2.9v14h6.3l0.4,2.5H52.1z"/><path d="M70.4,13.7v13.9h-3V13.7h-5.2v-2.6h13.2l0.4,2.6H70.4z"/><path d="M91.7,27.6v-7.3h-7.6v7.3h-2.9V11.1h2.9v6.6h7.6v-6.6h3v16.5H91.7z"/><path d="M108.8,27.9l-7.3-8.3v8h-2.9V11.1h2.9v7.4l6.5-7.4h3.4l-6.9,7.8l7.4,8.4L108.8,27.9z"/><path d="M117.5,27.6h-2.9l6.5-16.7h3.3l6.5,16.4l-2.9,0.7l-1.6-4.4H119L117.5,27.6z M122.7,13.7L122.7,13.7l-2.7,7.2h5.4C125.4,20.9,122.7,13.7,122.7,13.7z"/><path d="M144.1,27.8l-4.8-6.6h-1.8v6.4h-2.9V11.1h5.1c3.8,0,6.2,1.8,6.2,5.1c0,2.4-1.4,4-3.5,4.7l4.7,6.3L144.1,27.8z M139.6,13.6h-2.2v5.3h2.2c2.1,0,3.3-1,3.3-2.7C143,14.5,141.8,13.6,139.6,13.6z"/><path d="M157.1,13.7v13.9h-3V13.7h-5.2v-2.6h13.2l0.4,2.6H157.1z"/></g></g></svg></a></div>
+            </div>
+
+
+            <div class="search-bar new-search-menu">
+                <div class="search_hldr">
+
+                    <div id="search" class="hk-search-bar">
+                        <form id="globalSearch" action="/search/Search.action" method="get">
+                            <span class="search-bar-icon">
+            <i class="svg-other svg-zmobSearch_1 svg-zmobSearch_1-dims"></i>
+        </span>
+                            <input data-provide="typeahead" placeholder="Search for products" name="txtQ" class="hk-search-box search ellip hk-search-box-autofill" autocomplete="off" type="text">
+                            <input type="submit" value="SEARCH" class="search-icon" id="searchButtonFilter">
+
+                            <div style="display: none;">
+                                <input type="hidden" name="_sourcePage" value="T2oXi8Q0exGCM_tv4muobnmudObSgghY7AWIQ8nZftQ=">
+                                <input type="hidden" name="__fp" value="sAaVDjj5YQo=">
+                            </div>
+                        </form>
+                        <span class="close-search-filter" id="close-search-filter">
+      <i class="svg-url svg-cross floatL svg-cross-dims"></i>
+    </span>
+                        <input type="hidden" id="variant-id" value=""> <span class=" icn icn-search icn-search-img"></span>
+
+                        <div id="searchButton" class="search-menu">
+
+                            <div class="search-menu-label">
+                                <!--  <div class="search-hdr-txt">ALL CATEGORIES</div> -->
+                                <div class="icn-dwn-cs"></div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div id="output"></div>
+                </div>
+            </div>
+            <div class="hk-search-box-result" id="hkSearchBoxResult"></div>
+
+        </header>
+        <main>
+            <div class="banner"><a href="#"><img src="images/banner.jpg" alt="" /></a></div>
+            <div class="best_seller card productCarousel">
+            <div class="best_seller card top-page-section show">
+            <div class="card-title title font13 card-title-default">
+                    <span class="inline"> Trending in Whey Proteins</span>
+                <a class="see-more-link right" href="https://www.healthkart.com/nutrition/sports-nutrition/proteins/whey-proteins?navKey=SCT-snt-pt-wp" title="">View All</a>
+
+            </div>
+            <div class="wrapper pd_slider_outer shadow">
+            <a class="pd_hldr" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img9.hkrtcdn.com/1508/prd_150738_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
+                        <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
+                            <span class="font14 bold pd_price"> Rs. 4049.0</span>
+
+                </a>
+              <a class="pd_hldr bl" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img6.hkrtcdn.com/1144/prd_114335_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
+                        <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
+                            <span class="font14 bold pd_price"> Rs. 4049.0</span>
+
+                </a>
+                <a class="pd_hldr bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img1.hkrtcdn.com/1412/prd_141140_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
+                        <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
+                            <span class="font14 bold pd_price"> Rs. 4049.0</span>
+
+                </a>
+                <a class="pd_hldr bl bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img5.hkrtcdn.com/1434/prd_143364_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
+                        <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
+                            <span class="font14 bold pd_price"> Rs. 4049.0</span>
+
+                </a>
+            </div>
+        </div>
+                  <div class="banner brandBanner"><a href="#"><img src="https://img2.hkrtcdn.com/1500/bnr_149951_o.jpg" alt="" /></a></div>
+
+                <div class="card-title title font13 card-title-default">
+                    <span class="inline"> Top Brands</span>
+                <a class="see-more-link right" href="https://www.healthkart.com/nutrition/sports-nutrition/proteins/whey-proteins?navKey=SCT-snt-pt-wp" title="">View All</a>
+
+            </div>
+                 <div class="wrapper shadow category-sec">
+
+            <a class="pd_hldr" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img9.hkrtcdn.com/1508/prd_150738_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
+
+                            <span class="font14 bold pd_price"> MuslceBlaze</span>
+
+                </a>
+              <a class="pd_hldr bl" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img6.hkrtcdn.com/1144/prd_114335_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
+
+                            <span class="font14 bold pd_price">Incredio</span>
+
+                </a>
+                <a class="pd_hldr bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img1.hkrtcdn.com/1412/prd_141140_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
+
+                            <span class="font14 bold pd_price">Healthviva</span>
+
+                </a>
+                <a class="pd_hldr bl bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img5.hkrtcdn.com/1434/prd_143364_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
+
+                            <span class="font14 bold pd_price">Amway</span>
+
+                </a>
+                     <a class="pd_hldr" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img9.hkrtcdn.com/1508/prd_150738_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
+
+                            <span class="font14 bold pd_price">Herbalite</span>
+
+                </a>
+              <a class="pd_hldr bl" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img6.hkrtcdn.com/1144/prd_114335_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
+
+                            <span class="font14 bold pd_price">Dymatize</span>
+
+                </a>
+                <a class="pd_hldr bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img1.hkrtcdn.com/1412/prd_141140_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
+
+                            <span class="font14 bold pd_price">On Whey</span>
+
+                </a>
+                <a class="pd_hldr bl bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
+
+                            <img src="https://img5.hkrtcdn.com/1434/prd_143364_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
+
+                            <span class="font14 bold pd_price">Healthkart</span>
+
+                </a>
+            </div>
+            </div>
+
+            <div class="default-banners">
+
+
+        <div class="best_seller top-page-section show">
+            <div class="card-title title font13 card-title-default">
+                    <span class="inline"> Most Read Blogs</span>
+            </div>
+        </div>
+    <div class="banner-box" style="width: 100%;">
+    <a href="http://connect.healthkart.com/how-is-full-body-workout-important/bid-5227?itracker=w:mobile-web|;p:footer|;c:WorkoutImportant|;d:17Oct2016&amp;itracker=w:dbnr|home|;p:50|50|;c:ConnectBlogs|workout-important|;">
+                  <img class="img-responsive lazy imageLoaded" data-original="https://img2.hkrtcdn.com/1552/bnr_155171_o.jpg" alt="Workout Important" title="Workout Important" src="https://img2.hkrtcdn.com/1552/bnr_155171_o.jpg" style="display: block;" />
+
+                </a>
+
+
+
+                <a href="http://connect.healthkart.com/creatine-and-hair-loss-facts-risks/bid-5208?itracker=w:mobile-web|;p:footer|;c:CreatineandHairLoss|;d:17Oct2016&amp;itracker=w:dbnr|home|;p:50|45|;c:ConnectBlogs|creatine-and-hair-loss|;">
+
+                          <img class="img-responsive lazy imageLoaded" data-original="https://img3.hkrtcdn.com/1552/bnr_155172_o.jpg" alt="Creatine and Hair Loss" title="Creatine and Hair Loss" src="https://img3.hkrtcdn.com/1552/bnr_155172_o.jpg" style="display: block;">
+                </a>
+
+                <a href="http://connect.healthkart.com/new-atkins-diet-for-weight-loss/bid-5197?itracker=w:mobile-web|;p:footer|;c:WeightLoss|;d:17Oct2016&amp;itracker=w:dbnr|home|;p:50|40|;c:ConnectBlogs|weight-loss|;">
+                          <img class="img-responsive lazy imageLoaded" data-original="https://img4.hkrtcdn.com/1552/bnr_155173_o.jpg" alt="Weight Loss" title="Weight Loss" src="https://img4.hkrtcdn.com/1552/bnr_155173_o.jpg" style="display: block;">
+
+                </a>
+                <a href="http://connect.healthkart.com/foods-you-should-never-eat-not-all-health-foods-are-healthy/bid-5220?itracker=w:mobile-web|;p:footer|;c:FoodsAreHealthy|;d:17Oct2016&amp;itracker=w:dbnr|home|;p:50|35|;c:ConnectBlogs|foods-are-healthy|;">
+                          <img class="img-responsive lazy imageLoaded" data-original="https://img5.hkrtcdn.com/1552/bnr_155174_o.jpg" alt="Foods Are Healthy" title="Foods Are Healthy" src="https://img5.hkrtcdn.com/1552/bnr_155174_o.jpg" style="display: block;">
+                </a>
+
+                <a href="http://consult.healthkart.com/?itracker=Mbanners&amp;itracker=w:dbnr|home|;p:50|30|;c:ConnectBlogs|consult-bodybuilding|;">
+
+                          <img class="img-responsive lazy imageLoaded" data-original="https://img10.hkrtcdn.com/1338/bnr_133749_o.jpg" alt="Consult BodyBuilding" title="Consult BodyBuilding" src="https://img10.hkrtcdn.com/1338/bnr_133749_o.jpg" style="display: block;">
+
+                </a>
+
+                <a href="http://consult.healthkart.com/?itracker=Mbanners&amp;itracker=w:dbnr|home|;p:50|25|;c:ConnectBlogs|consult-weightloss|;">
+                          <img class="img-responsive lazy imageLoaded" data-original="https://img9.hkrtcdn.com/1338/bnr_133748_o.jpg" alt="Consult Weightloss" title="Consult Weightloss" src="https://img9.hkrtcdn.com/1338/bnr_133748_o.jpg" style="display: block;">
+                </a>
+
+</div>
+            </div>
+            <div class="goal-section">
+                <div class="best_seller top-page-section show">
+                    <div class="card-title title font13 card-title-default">
+                              <span class="inline"> Shop By Goal</span>
+                        </div>
+                </div>
+                    <div class="banner-box">
+
+
+                        <a href="https://www.healthkart.com/nutrition?navKey=CP-nut&amp;itracker=w:dbnr|home|;p:58|100|;c:Shop By Goal|body-building|;">
+                                  <img class="img-responsive lazy imageLoaded" data-original="https://img5.hkrtcdn.com/1422/bnr_142164_o.jpg" alt="Body Building" title="Body Building" src="https://img5.hkrtcdn.com/1422/bnr_142164_o.jpg" style="display: block;">
+          </a>
+
+                        <a href="https://www.healthkart.com/vitamins-n-supplements/speciality-supplements/weight-loss?navKey=CP-vs-spc-fat&amp;itracker=w:dbnr|home|;p:58|90|;c:Shop By Goal|weight-loss|;">  <img class="img-responsive lazy imageLoaded" data-original="https://img6.hkrtcdn.com/1422/bnr_142165_o.jpg" alt="Weight loss" title="Weight loss" src="https://img6.hkrtcdn.com/1422/bnr_142165_o.jpg" style="display: block;">
+
+                        </a>
+
+                        <a href="https://www.healthkart.com/wellness/hair-n-skin-care?navKey=CP-wel-har-skn&amp;itracker=w:dbnr|home|;p:58|80|;c:Shop By Goal|hair-n-skin-care|;">
+                          <img class="img-responsive lazy imageLoaded" data-original="https://img7.hkrtcdn.com/1422/bnr_142166_o.jpg" alt="Hair &amp; Skin Care" title="Hair &amp; Skin Care" src="https://img7.hkrtcdn.com/1422/bnr_142166_o.jpg" style="display: block;">
+
+                        </a>
+                        </div>
+
+        </div>
+        </main>
+        <footer class="footer">
+<div class="tcenter"><a href="/hk/ContactUs.action">Contact Us</a>
+  <a href="/account/MyAccount.action?pre=&amp;tabId=1">Account</a>
+
+  <a href="/hk/FAQ.action">FAQs</a>
+  <a href="/hk/TermsConditions.action">Terms &amp; Conditions</a>
+  <a class="" href="?view=desktop" rel="nofollow">View Desktop Site</a></div>
+<div class="font12 tcenter2">
+  <b>Disclaimer: </b>
+  The information contained on HealthKart (www.healthkart.com or subdomains) is provided for informational purposes
+  only and is not meant to substitute for the advice provided by your doctor or other healthcare professional.
+  Information and statements regarding products, supplements, programs etc listed on HealthKart have not been
+  evaluated by the Food and Drug Administration or any government authority and are not intended to diagnose, treat,
+  cure, or prevent any disease. Please read product packaging carefully prior to purchase and use. The results from the products will vary from person to person. No individual result should be seen as typical.
+</div>
+<div class="tcenter font12 tcenter2">© 2015-2016, HealthKart.com</div>
+</footer>
+     </div>
+
+
+
+    <div class="app__content">
+      <h3>Push Notification: </h3>
+      <p class="custom__button">
+        <input id="turn-on-notification" type="checkbox" hidden="hidden" class="custom__input" data-checked="">
+        <label for="turn-on-notification" class="custom__checkbox"></label>
+        <button class="no--select send-push" disabled>Send Push Notification</button>
+      </p>
+
+      <h3>Fetch API: </h3>
+
+      <div class="card">
+        <div class="card__spinner"></div>
+        <div class="card__container">
+          <img alt="avatar" class="card__img">
+          <p class="card__title"></p>
+          <p class="card__desc"></p>
+          <p class="card__temp">
+            <b>Company: </b><span></span>
+          </p>
+          <p class="card__following"><b>Following: </b><span></span></p>
+          <p class="card__followers"><b>Followers: </b><span></span></p>
+          <div class="add__to-card">
+            <input type="text" class="add__input" placeholder="Enter a github username" />
+            <button class="add__btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="add__card">
+        <b><i>Try BG Sync in <a href="https://www.google.com/chrome/browser/canary.html" target="_blank" rel="noopener">Chrome Canary</a> or Chrome in Android</i></b>
+        <h3>Enable OneTime BG Sync:
+          <span class="bg-sync__text" hidden>Registered</span>
+          <p class="custom__button custom__button-bg">
+            <button class="turn-on-sync">Register</button>
+          </p>
+        </h3>
+        <p>In chrome dev channel, Android</p>
+        <ul>
+          <li><b>Step 1:</b> Go offline.</li>
+          <li><b>Step 2:</b> Register BG Sync from above register button.<li>
+          <li><b>Step 3:</b> Enter a git username and click add.</li>
+          <li><b>Step 4:</b> Go online and sync will be triggered when user is gets connectivity and card will be updated.</li>
+        </ul>
+          <p>or Emulate via chrome devTools</p>
+        <ul>
+          <li><b>Step 1: </b> Go offline and register BG Sync.</li>
+          <li><b>Step 2: </b>Go to application tab in chrome canary devTools, navigate to serviceWorker tab.</li>
+          <li><b>Step 3: </b>Go online and click `sync` button to emulate sync.</li>
+          <li><b>Step 4: </b>Above card will be updated as per your input.</li>
+        </ul>
+      </div>
+
+      <div class="card__spinner"></div>
+
+      <div class="share__container">
+        <h3>Share API</h3>
+        <ul>
+          <li><b>Step 1: </b>Go to <a href="https://play.google.com/store/apps/details?id=com.chrome.dev&hl=en" target="_blank" rel="noopener">Chrome Dev Channel on Android</a></li>
+          <li><b>Step 2: </b>Toggle <a href="chrome://flags/#enable-experimental-web-platform-features" target="_blank" rel="noopener">chrome://flags/#enable-experimental-web-platform-features</a></li>
+          <li><b>Step 3: </b>Click share button to share.</li>
+        </ul>
+
+        <button class="share">Share</button>
+      </div>
+
+      <div class="snackbar">
+        <p class="snackbar__msg no--select"></p>
+        <div class="snackbar__action no--select">hide</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Files  -->
+  <script type="text/javascript">
+  //If serviceWorker supports, then register it.
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register('./serviceWorker.js', { scope: "./" }) //setting scope of sw
+    .then(function (registration) {
+      console.info('Service worker is registered!');
+    })
+    .catch(function (error) {
+      console.error('Service worker failed ', error);
+    });
+  }
+  </script>
+  <script src="./js/snackbar.js"></script>
+  <script src="./js/push.js"></script>
+  <script src="./js/sync.js"></script>
+  <script src="./js/share.js"></script>
+  <script src="./js/app.js"></script>
+  </body>
+</html>
