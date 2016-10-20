@@ -53,7 +53,7 @@
   menuOverlayElement.addEventListener('click', hideMenu, false);
 
   //Add card click event
-  addCardBtnElement.addEventListener('click', addGitUserCard, false);
+  // addCardBtnElement.addEventListener('click', addGitUserCard, false);
 
   //After DOM Loaded, check for offline/online status
   document.addEventListener('DOMContentLoaded', function(event) {
