@@ -812,6 +812,9 @@ input[type="submit"].search-icon {
 .svg-zmobSearch_1-dims {
     width: 26px;
     height: 26px;
+    float: none;
+display: block;
+margin: 0 auto;
 }
 
 .svg-hkmoblogo {
@@ -1396,7 +1399,7 @@ input[type="submit"].search-icon {
     color: #757575;
 */
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     padding: 0;
     display: inline-block;
     max-width: 80%;
@@ -1521,18 +1524,29 @@ input[type="submit"].search-icon {
     margin-bottom: 0;
     font-weight: 400;
     min-height: 25px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 14px;
     box-shadow: 1px 0 2px #cccccc;
     text-transform: uppercase;
 }
+#accordion h3 i{
+    font-size: 15px;
+}
 #accordion  ul {
     padding: 5px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: capitalize;
 }
 #accordion  ul li {
     padding: 10px;
+    padding-left: 15px;
+}
+.border-bottom0{border-bottom: 0px !important;}
+.pd_slider_outer a img{
+    max-width: 81%;
+}
+.free-shiping .free-icon, .hk-box .hk-icon{
+    margin-right: 0 !important;;
 }
 #accordion div {
     display: none;
@@ -1542,12 +1556,12 @@ i {
     font-size: 17px;
     margin-right: 10px;
 }
-.shake {
+/*.shake {
     animation: shakeIt 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-}
+}*/
 
 @keyframes shakeIt {
   10%, 90% {
@@ -1918,6 +1932,10 @@ i {
     overflow: hidden;
     font-size: 14px;
     float: left;
+    margin-bottom: 10px;
+}
+.slider_con .offer-icon-box .offer-text-icon{
+    padding-left: 0 !important;
 }
 .hk-box {
     border: 2px solid #3bc56a;
@@ -1996,7 +2014,7 @@ i {
 }
 .offer-container {
     position: relative;
-    padding: 15px 16px 0 0;
+    padding: 40px 16px 0 0;
 }
 .exclusive-offer, .exclusive-offer-inner {
     width: 100%;
@@ -2100,7 +2118,7 @@ button, input, select, textarea {
     right: auto;
     top: 0;
     bottom: auto;
-    padding: 5px 5px 5px 20px;
+    padding: 6px 5px 5px 10px;
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -2118,6 +2136,7 @@ button, input, select, textarea {
 .delivery-sec .font12 h3 {
     font-size: 16px;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 .delivery-sec .card-content {
     padding-left: 0;
@@ -2144,7 +2163,7 @@ button, input, select, textarea {
     text-decoration: none;
     text-align: center;
     width: 20%;
-    padding: 13px;
+    padding: 13px 5px;
     background-color: #38a4dc;
     color: #fff;
 }
@@ -2179,8 +2198,8 @@ button, input, select, textarea {
     width: 100%;
     float: left;
     margin: 0!important;
-    border-bottom: 2px solid #eee;
-    padding: 30px 16px;
+    /*border-bottom: 2px solid #eee;*/
+    padding: 30px 0px;
     background: #fff;
 }
 .info-section {
@@ -2236,6 +2255,7 @@ button, input, select, textarea {
     margin-top: 0;
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 .vds-product-info {
     width: 100%;
@@ -2411,6 +2431,73 @@ div.pd10 {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 /*My Changes*/
 
