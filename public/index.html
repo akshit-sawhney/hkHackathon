@@ -25,6 +25,10 @@
       <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
       <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="./js/index.js"></script>
       <script>
         // Initialize Firebase
         var config = {
@@ -65,8 +69,21 @@
                 </a>
 
                 <div class="header-sprite header-sprite-user user" >
-                   <svg class="svg-icon floatL svg-zuser_1-dims" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="0 0 24 24" xml:space="preserve" width="18px" height="18px" stroke-linecap="" stroke-linejoin="" stroke-miterlimit=""> <path fill="#A7A9AC" stroke="#A7A9AC" stroke-width="0" d="M17,7c0,2.8-2.2,5-5,5S7,9.8,7,7c0-2.8,2.2-5,5-5S17,4.2,17,7z"></path> <path fill="#A7A9AC" stroke="#A7A9AC" stroke-width="0" d="M2,20.3c0-3.3,6.7-5.2,10-5.2s10,1.8,10,5.2V22H2V20.3z"></path> </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 491.86 491.86"  xml:space="preserve">
+<g>
+	<g>
+		<path d="M465.167,211.614H280.245V26.691c0-8.424-11.439-26.69-34.316-26.69s-34.316,18.267-34.316,26.69v184.924H26.69    C18.267,211.614,0,223.053,0,245.929s18.267,34.316,26.69,34.316h184.924v184.924c0,8.422,11.438,26.69,34.316,26.69    s34.316-18.268,34.316-26.69V280.245H465.17c8.422,0,26.69-11.438,26.69-34.316S473.59,211.614,465.167,211.614z" style="&#10;    /* width: 10px; */&#10;    /* height: 10px; */&#10;"/>
+	</g>
+
+
+</g>
+</svg>
+                    
                 </div>
+                <div class="overlayContent">
+                    <p>Tap the button on top right corner and select "Add To Homescreen" to add this page to your homescreen</p>
+                        <button class="gotIt">GOT IT !</button>
+                    </div>
                 <div>
                     <a href="https://itunes.apple.com/us/app/healthkart/id995933852?ls=1&amp;mt=8&amp;referrer=utm_source%3Dhealthkart%26utm_medium%3Dmob" target="_blank" class="header-sprite header-sprite-user cart download-ios-app" style="display: none;">
                       <svg class="svg-icon floatL svg-appd-dims" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="0 0 24 24" xml:space="preserve" width="26px" height="26px" stroke-linecap="" stroke-linejoin="" stroke-miterlimit=""> <path fill="#fff" stroke="#cccccc" stroke-width="0" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path> <path fill="none" stroke="#cccccc" stroke-width="0" d="M0 0h24v24H0z"></path> </svg>
@@ -125,7 +142,64 @@
         </header>
         <main>
             <div class="banner"><a href="#"><img src="images/banner.jpg" alt="" /></a></div>
+            
             <div class="best_seller card productCarousel">
+                <div class="card-title title font13 card-title-default">
+                    <span class="inline"> Top Categories</span>                
+            </div>
+            <div class="categories" id="accordion">
+                <h3 class="main-cat">Protein <i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
+                <div>
+                    <ul>
+                        <li><a href="">Whey protein</a></li>
+                        <li><a href="">whey protein isolate</a></li>
+                        <li><a href="">Protein Blends</a></li>
+                        <li><a href="">Casein Proteins</a></li>
+                        <li><a href="">Natural Proteins</a></li>
+                        <li><a href="">Soy Proteins</a></li>
+                            
+                    </ul>
+                </div>
+                <h3 class="main-cat">Gainers <i class="fa fa-chevron-down" aria-hidden="true"></i> </h3>
+                <div>
+                    <ul>
+                        <li><a href=""> Weight Gainers</a></li>
+                        <li><a href=""> Mass Gainers</a></li>
+                            
+                    </ul>
+                </div>
+                <h3 class="main-cat">Pre/Post Workouts<i class="fa fa-chevron-down" aria-hidden="true"></i> </h3>
+                <div>
+                    <ul>
+                        <li><a href=""> Pre-Workout</a></li>
+                        <li><a href=""> Creatine</a></li>
+                        <li><a href=""> Nitric Oxide</a></li>
+                            
+                    </ul>
+                </div>
+                <h3 class="main-cat">MultiVitamins</h3>
+<!--
+                <div>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                            
+                    </ul>
+                </div>
+-->
+                <h3 class="main-cat">Weight Loss</h3>
+<!--
+                <div>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                            
+                    </ul>
+-->
+                </div>
+            </div>
                 <div class="card-title title font13 card-title-default">
                     <span class="inline"> Top Brands</span>
                 <a class="see-more-link right" href="https://www.healthkart.com/nutrition/sports-nutrition/proteins/whey-proteins?navKey=SCT-snt-pt-wp" title="">View All</a>
@@ -137,59 +211,61 @@
 
                             <img src="https://img9.hkrtcdn.com/1508/prd_150738_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
 
-                            <span class="font14 bold pd_price"> MuslceBlaze</span>
+                            <span class="font14 bold "> MuslceBlaze</span>
+               
 
                 </a>
               <a class="pd_hldr bl" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img6.hkrtcdn.com/1144/prd_114335_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
 
-                            <span class="font14 bold pd_price">Incredio</span>
+                            <span class="font14 bold ">Incredio</span>
 
                 </a>
                 <a class="pd_hldr bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img1.hkrtcdn.com/1412/prd_141140_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
 
-                            <span class="font14 bold pd_price">Healthviva</span>
+                            <span class="font14 bold ">Healthviva</span>
 
                 </a>
                 <a class="pd_hldr bl bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img5.hkrtcdn.com/1434/prd_143364_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
 
-                            <span class="font14 bold pd_price">Amway</span>
+                            <span class="font14 bold ">Amway</span>
 
                 </a>
                      <a class="pd_hldr" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img9.hkrtcdn.com/1508/prd_150738_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
 
-                            <span class="font14 bold pd_price">Herbalite</span>
+                            <span class="font14 bold ">Herbalite</span>
 
                 </a>
               <a class="pd_hldr bl" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img6.hkrtcdn.com/1144/prd_114335_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
 
-                            <span class="font14 bold pd_price">Dymatize</span>
+                            <span class="font14 bold ">Dymatize</span>
 
                 </a>
                 <a class="pd_hldr bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img1.hkrtcdn.com/1412/prd_141140_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
 
-                            <span class="font14 bold pd_price">On Whey</span>
+                            <span class="font14 bold ">On Whey</span>
 
                 </a>
                 <a class="pd_hldr bl bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
 
                             <img src="https://img5.hkrtcdn.com/1434/prd_143364_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
 
-                            <span class="font14 bold pd_price">Healthkart</span>
+                            <span class="font14 bold ">Healthkart</span>
 
                 </a>
             </div>
+                <div class="banner brandBanner"><a href="#"><img src="https://img2.hkrtcdn.com/1500/bnr_149951_o.jpg" alt="" /></a></div>
             <div class="best_seller card top-page-section show">
             <div class="card-title title font13 card-title-default">
                     <span class="inline"> Trending in Whey Proteins</span>
@@ -202,6 +278,9 @@
                             <img src="https://img9.hkrtcdn.com/1508/prd_150738_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
                         <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
                             <span class="font14 bold pd_price"> Rs. 4049.0</span>
+                 <span class="font14 bold pd_offerPrice"> Rs. 4000.0</span>
+                <span class="hkcash">HK Cash - 30</span>
+
 
                 </a>
               <a class="pd_hldr bl" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
@@ -209,6 +288,9 @@
                             <img src="https://img6.hkrtcdn.com/1144/prd_114335_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
                         <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
                             <span class="font14 bold pd_price"> Rs. 4049.0</span>
+                   <span class="font14 bold pd_offerPrice"> Rs. 4000.0</span>
+                <span class="hkcash">HK Cash - 30</span>
+
 
                 </a>
                 <a class="pd_hldr bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
@@ -216,6 +298,9 @@
                             <img src="https://img1.hkrtcdn.com/1412/prd_141140_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate " />
                         <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
                             <span class="font14 bold pd_price"> Rs. 4049.0</span>
+                     <span class="font14 bold pd_offerPrice"> Rs. 4000.0</span>
+                <span class="hkcash">HK Cash - 30</span>
+
 
                 </a>
                 <a class="pd_hldr bl bm" href="https://www.healthkart.com/sv/muscleblaze-whey-protein/SP-8686?navKey=VRNT-72367&amp;itracker=w:ptile|home|;p:90|100|;c:Trending in Whey Proteins|;">
@@ -223,11 +308,13 @@
                             <img src="https://img5.hkrtcdn.com/1434/prd_143364_c_s.jpg" alt="MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate "/>
                         <span class="pd_name font12 bold">MuscleBlaze Whey Protein,  4.4 lb  Rich Milk Chocolate </span>
                             <span class="font14 bold pd_price"> Rs. 4049.0</span>
+                     <span class="font14 bold pd_offerPrice"> Rs. 4000.0</span>
+                <span class="hkcash">HK Cash - 30</span>
 
                 </a>
             </div>
         </div>
-                  <div class="banner brandBanner"><a href="#"><img src="https://img2.hkrtcdn.com/1500/bnr_149951_o.jpg" alt="" /></a></div>
+                  
 
 
             </div>
@@ -273,6 +360,7 @@
 
 </div>
             </div>
+<!--
             <div class="goal-section">
                 <div class="best_seller top-page-section show">
                     <div class="card-title title font13 card-title-default">
@@ -297,6 +385,7 @@
                         </div>
 
         </div>
+-->
         </main>
         <footer class="footer">
 <div class="tcenter"><a href="/hk/ContactUs.action">Contact Us</a>
@@ -409,5 +498,6 @@
   <script src="./js/sync.js"></script>
   <script src="./js/share.js"></script>
   <script src="./js/app.js"></script>
+ 
   </body>
 </html>
