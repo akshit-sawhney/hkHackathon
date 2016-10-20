@@ -3,7 +3,7 @@
 
   //Push notification button
   var notificationBtnElement = document.getElementById('turn-on-notification');
-  var pushBtnElement = document.querySelector('.send-push');
+  // var pushBtnElement = document.querySelector('.send-push');
 
   //API key & GCM Token
   var apiKey = 'AIzaSyCqeX1Madw9wGNtw2zGZp2jfTUSzPXAZqk'; //replace with your own key
@@ -110,22 +110,22 @@
     notificationBtnElement.dataset.checked = status;
     notificationBtnElement.checked = status;
     if (status) {
-      pushBtnElement.removeAttribute("disabled");
+    //   pushBtnElement.removeAttribute("disabled");
     }
     else {
-      pushBtnElement.setAttribute("disabled", true);
+    //   pushBtnElement.setAttribute("disabled", true);
     }
   }
 
   //Click event for subscribe notificationBtnElement
   notificationBtnElement.addEventListener('click', function () {
     var isBtnChecked = (notificationBtnElement.dataset.checked === 'true');
-    if (isBtnChecked) {
-      unsubscribePush();
-    }
-    else {
+    // if (isBtnChecked) {
+    //   unsubscribePush();
+    // }
+    // else {
       subscribePush();
-    }
+    // }
   });
 
   //To generate curl command to send push notification
@@ -163,9 +163,9 @@
   }
 
   //To send `push notification`
-  pushBtnElement.addEventListener("click", function () {
-    sendPushNotification();
-  }, false);
+  // pushBtnElement.addEventListener("click", function () {
+  //   sendPushNotification();
+  // }, false);
 
   isPushSupported(); //Check for push notification support
 })(window);
